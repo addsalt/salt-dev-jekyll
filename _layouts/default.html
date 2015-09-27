@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<meta name="description" content="Tek-AV is an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology.">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Salt. Ideas that taste good.</title>
+</head>
+	
+<body>
+    <div class="container">
+        <header>
+            <nav class="neuzeit">
+                <a id="salt-logo" href="/">Salt.</a>
+                <ul>
+                    <li><a class="smooth-scroll arrow-bounce" href="#work">Work <i>→</i></a></li>
+                    <li><a class="smooth-scroll arrow-bounce" href="#about">About <i>→</i></a></li>
+                    <li><a class="smooth-scroll arrow-bounce" href="#contact">Contact <i>→</i></a></li>
+                    <li class="instagram-link cooper"><a href="http://wwww.instagram.com/just_addsalt"><i class="icon-instagram"></i>just_addsalt</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        {{content}}
+        
+        <footer>
+            <p>© 2015 Salt.</p>
+        </footer>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//use.typekit.net/atz8vuw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        $(function() {
+          $('.smooth-scroll').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 500);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
+</body>
+</html>

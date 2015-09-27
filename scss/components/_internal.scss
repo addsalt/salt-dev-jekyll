@@ -1,0 +1,323 @@
+// Internal
+
+.internal {
+    padding: 0;
+    color: #464646;
+}
+
+.internal .container {
+    //background-color: #ddf4f6;
+    //color: #d33f39;
+    background-color: rgba(0,0,0,.05);
+}
+
+.project-nav {
+    position: fixed;
+    z-index: 8;
+    background-color: white;
+    text-align: center;
+    height: 10rem;
+    margin: 0;
+    width: 27px;
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    a {
+        font-size: .75rem;
+        line-height: 1;
+        color: #464646;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+#prev, #next, #back {
+    display: block;
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.project-back {
+    height: 27px;
+    width: 10rem;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+#back {
+    bottom: 0;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-100%);
+}
+
+#next a, #prev a {
+    display: block;
+    width: 10rem;
+    height: 27px;
+    float: left;
+    i {
+        color: #464646;
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+}
+
+#prev a {
+    transform-origin: left top;
+    -webkit-transform: rotate(270deg) translateX(-100%) translateY(3px);
+    transform: rotate(270deg) translateX(-100%) translateY(3px);
+    i {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+#next a {
+    transform-origin: left top;
+    -webkit-transform: rotate(90deg) translateY(-23px);
+    transform: rotate(90deg) translateY(-23px);
+    i {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+#prev:hover {
+    left: 1rem;
+}
+
+#next:hover {
+    right: 1rem;
+}
+
+.project-intro {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 2360px;
+    text-align: center;
+    h1 {
+        font-family: "cooper-black-std", sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 4.65rem;
+        letter-spacing: -0.04em;
+        margin-top: 2.75rem;
+        line-height: .85;
+    }
+    h2 {
+        font-size: .75rem;
+        line-height: 1.25;
+        margin: 3.125rem auto 2.785rem;
+        font-family: "neuzeit-grotesk",sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+    }
+    p {
+        margin-bottom: 3.125rem;
+    }
+}
+
+.work-grid {
+    aside {
+        position: relative;
+        height: 200px;
+        @media only screen and (min-width: 38em) {
+            height: 300px;
+        }
+        @media only screen and (min-width: 60em) {
+            height: 600px;
+        }
+    }
+    .graphic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #4082f8;
+    }
+    @media only screen and (min-width: 38em) {
+         .gutter-right {
+            padding-right: 9px;
+             .graphic {
+                 right: 9px;
+             }
+         }
+         .gutter-left {
+            padding-left: 9px;
+             .graphic {
+                 left: 9px;
+             }
+         }
+    }
+}
+
+.twocol-img {
+    @media only screen and (min-width: 38em) {
+         .gutter-right {
+            padding-right: 9px;
+             .graphic {
+                 right: 9px;
+             }
+         }
+         .gutter-left {
+            padding-left: 9px;
+             .graphic {
+                 left: 9px;
+             }
+         }
+    }
+}
+
+.push-top {
+    margin-top: 18px;
+}
+
+.push-top-small {
+    margin-top: 18px;
+    @media only screen and (min-width: 38em) {
+        margin-top: 0;
+    }
+}
+
+.work-content {
+    .gutter-right {
+        padding-right: 0px;
+     }
+     .gutter-left {
+        padding-left: 0px;
+     }
+    @media only screen and (min-width: 60em) {
+         .gutter-right {
+            padding-right: 9px;
+         }
+         .gutter-left {
+            padding-left: 9px;
+         }
+    }
+    .text-section {
+        padding-top: 2rem;
+        @media only screen and (min-width: 60em) {
+            padding-top: 0;
+            margin-top: -5px;
+        }
+    }
+}
+
+blockquote {
+    margin-bottom: 1.5rem;
+    p {
+        text-decoration: underline;
+    }
+    cite {
+        display: block;
+        margin-top: 1.5rem;
+        text-decoration: none;
+        font-style: normal;
+        position: relative;
+        padding-left: 1rem;
+        &:after {
+            content: '–';
+            color: #464646;
+            position: absolute;
+            left: 0;
+            top: -1px;
+        }
+    }
+}
+
+#about-project {
+    background-color: rgba(0,0,0,.05);
+    color: #464646;
+    #project-about {
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+        p {
+            max-width: 35rem;
+            font-size: 1.5625rem;
+            line-height: 1.56;
+            text-decoration: underline;
+            text-align: center;
+            margin: 3.125rem auto 2.785rem;
+            font-family: "neuzeit-grotesk",sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+    }
+    .more-projects {
+        margin-top: 6rem;
+        padding-top: 3.25rem;
+        text-align: center;
+        border-top: dotted 1px #464646;
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            letter-spacing: 0.04em;
+        }
+        .project-list {
+            list-style-type: none;
+            font-size: 3.0525rem;
+            a {
+                letter-spacing: -0.01em;
+                line-height: 1.3;
+                margin: 0;
+                span {
+                    text-decoration: underline;
+                }
+                &:link {
+                    color: #464646;
+                }
+                &:visited {
+                    color: #b2b2b2;
+                }
+                &:hover {
+                    color: #b2b2b2;
+                }
+
+            }
+        }
+    }
+}
+
+.project-info {
+    .intro-img {
+        display: block;
+        height: 30rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+    .project-agora {
+        background-image: url({{site.baseurl}}/images/portfolio/agora-intro.jpg);
+    }
+    .main-img {
+        width: 160%;
+        margin-left: -30%;
+        @media only screen and (min-width: 60em) {
+            width: 100%;
+            margin-left: auto;
+        }
+    }
+    figure {
+        margin-top: 18px;
+        margin-bottom: 0;
+        figcaption {
+            p {
+                font-size: .64rem;
+                margin-top:6px;
+            }
+        }
+    }
+}

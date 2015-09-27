@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<meta charset="UTF-8">
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<meta name="description" content="Tek-AV is an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology.">
+	<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+	<title>Salt. Ideas that taste good.</title>
+</head>
+	
+<body class="internal">
+    
+    <div class="project-nav" id="prev">
+        <a href="letsmatcha.html"><i>→</i> Prev Project</a>
+    </div>
+    <div class="project-nav" id="next">
+        <a href="tek-av.html">Next Project <i>→</i></a>
+    </div>
+    
+    <div class="container">
+        <header>
+            <nav class="neuzeit">
+                <a id="salt-logo" href="/">Salt.</a>
+                <ul>
+                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#work">Work <i>→</i></a></li>
+                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#about">About <i>→</i></a></li>
+                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#contact">Contact <i>→</i></a></li>
+                    <li class="instagram-link cooper"><a href="http://wwww.instagram.com/just_addsalt"><i class="icon-instagram"></i>just_addsalt</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="project-info">
+            
+            <div class="intro-img {{page.mastheadClass}}"></div>
+        
+            {{content}}
+        
+            <section id="about-project" class="push-top">
+                <div class="max-width">
+                    <div id="project-about">
+                        <p>This project was really awesome because…here we can describe the takeaways from the project. We can touch upon our experiences, our client relationship, lessons learnt and anything else that came up along the way.</p>
+                    </div> 
+                    <div class="more-projects">
+                        <h2 class="reg neuzeit underline no-margin-top">More Projects</h2>
+                        <ul class="project-list neuzeit">
+                            <li><a href="agora.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Agora</a></li>
+                            <li><a href="letsmatcha.html" class="{% if page.url == '/letsmatcha.html' %}current{% endif %}">Let's Matcha</a></li>
+                            <li><a href="tek-av.html" class="{% if page.url == '/tek-av.html' %}current{% endif %}">T<span class="kern-2">ek-A<span class="kern-1">V</span></span></a></li>
+                            <li><a href="lvd.html" class="{% if page.url == '/lvd.html' %}current{% endif %}">LVD Fitness</a></li>
+                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Enhansoft</a></li>
+                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Explorandes</a></li>
+                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Dive</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section> 
+            <footer>
+                <p>© 2015 Salt.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//use.typekit.net/atz8vuw.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+        $(function() {
+          $('.smooth-scroll').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 500);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
+</body>
+</html>
