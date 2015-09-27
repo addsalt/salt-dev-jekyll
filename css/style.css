@@ -2357,18 +2357,6 @@ blockquote cite:after {
   color: #b2b2b2;
 }
 
-.project-info .intro-img {
-  display: block;
-  height: 30rem;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-}
-
-.project-info .project-agora {
-  background-image: url({{site.baseurl}}/images/portfolio/agora-intro.jpg);
-}
-
 .project-info .main-img {
   width: 160%;
   margin-left: -30%;
@@ -2389,8 +2377,4 @@ blockquote cite:after {
 .project-info figure figcaption p {
   font-size: .64rem;
   margin-top: 6px;
-}
-
-.project-agora {
-  background-image: url({{site.baseurl}}/images/portfolio/agora-1.jpg);
 }

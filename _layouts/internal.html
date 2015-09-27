@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width,intial-scale=1">
 	<meta name="description" content="Tek-AV is an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology.">
 	<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
-	<title>Salt. Ideas that taste good.</title>
+	<title>Salt. > {% if page.title %}{{page.title}}{% endif %}</title>
+    <meta name="description" content="{{page.meta}}"
 </head>
 	
 <body class="internal">
@@ -20,17 +21,7 @@
     </div>
     
     <div class="container">
-        <header>
-            <nav class="neuzeit">
-                <a id="salt-logo" href="/">Salt.</a>
-                <ul>
-                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#work">Work <i>→</i></a></li>
-                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#about">About <i>→</i></a></li>
-                    <li><a class="smooth-scroll arrow-bounce" href="{{site.baseurl}}/index.html/#contact">Contact <i>→</i></a></li>
-                    <li class="instagram-link cooper"><a href="http://wwww.instagram.com/just_addsalt"><i class="icon-instagram"></i>just_addsalt</a></li>
-                </ul>
-            </nav>
-        </header>
+        {% include nav.html %}
         
         <main class="project-info">
             
@@ -45,15 +36,7 @@
                     </div> 
                     <div class="more-projects">
                         <h2 class="reg neuzeit underline no-margin-top">More Projects</h2>
-                        <ul class="project-list neuzeit">
-                            <li><a href="agora.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Agora</a></li>
-                            <li><a href="letsmatcha.html" class="{% if page.url == '/letsmatcha.html' %}current{% endif %}">Let's Matcha</a></li>
-                            <li><a href="tek-av.html" class="{% if page.url == '/tek-av.html' %}current{% endif %}">T<span class="kern-2">ek-A<span class="kern-1">V</span></span></a></li>
-                            <li><a href="lvd.html" class="{% if page.url == '/lvd.html' %}current{% endif %}">LVD Fitness</a></li>
-                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Enhansoft</a></li>
-                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Explorandes</a></li>
-                            <li><a href="internal1.html" class="{% if page.url == '/agora.html' %}current{% endif %}">Dive</a></li>
-                        </ul>
+                        {% include projects-nav.html %}
                     </div>
                 </div>
             </section> 

@@ -292,16 +292,6 @@ blockquote {
 }
 
 .project-info {
-    .intro-img {
-        display: block;
-        height: 30rem;
-        width: 100%;
-        background-size: cover;
-        background-position: center center;
-    }
-    .project-agora {
-        background-image: url({{site.baseurl}}/images/portfolio/agora-intro.jpg);
-    }
     .main-img {
         width: 160%;
         margin-left: -30%;

@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /salt-dev-jekyll
 exclude: ['README.md'] 
+permalink: pretty
