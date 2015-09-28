@@ -292,14 +292,6 @@ blockquote {
 }
 
 .project-info {
-    .main-img {
-        width: 160%;
-        margin-left: -30%;
-        @media only screen and (min-width: 60em) {
-            width: 100%;
-            margin-left: auto;
-        }
-    }
     figure {
         margin-top: 18px;
         margin-bottom: 0;

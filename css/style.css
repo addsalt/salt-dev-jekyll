@@ -1519,13 +1519,17 @@ em {
   margin-left: 10px;
 }
 
+nav {
+  text-align: center;
+}
+
 nav #salt-logo {
   background-image: url(http://www.justaddsalt.ca/salt-dev/images/salt.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
   display: inline-block;
-  width: 100%;
+  width: 4rem;
   height: 1.875rem;
   text-indent: 9999px;
   overflow: hidden;
@@ -1540,11 +1544,12 @@ nav #salt-logo {
 nav ul {
   display: inline-block;
   width: 100%;
-  margin-top: .85rem;
+  margin-top: .5rem;
 }
 
 @media only screen and (min-width: 45em) {
   nav ul {
+    margin-top: .85rem;
     width: 61%;
   }
 }
@@ -2355,18 +2360,6 @@ blockquote cite:after {
 
 #about-project .more-projects .project-list a:hover {
   color: #b2b2b2;
-}
-
-.project-info .main-img {
-  width: 160%;
-  margin-left: -30%;
-}
-
-@media only screen and (min-width: 60em) {
-  .project-info .main-img {
-    width: 100%;
-    margin-left: auto;
-  }
 }
 
 .project-info figure {

@@ -7,17 +7,17 @@
 	<meta name="viewport" content="width=device-width,intial-scale=1">
 	<meta name="description" content="Tek-AV is an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology.">
 	<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
-	<title>Salt. > {% if page.title %}{{page.title}}{% endif %}</title>
-    <meta name="description" content="{{page.meta}}"
+	<title>Salt. > {% if page.metaTitle %}{{page.metaTitle}}{% endif %}</title>
+    <meta name="description" content="{{page.metaDesc}}"
 </head>
 	
 <body class="internal">
     
     <div class="project-nav" id="prev">
-        <a href="letsmatcha.html"><i>→</i> Prev Project</a>
+        <a href="{{site.baseurl}}/work/{{page.prev}}"><i>→</i> Prev Project</a>
     </div>
     <div class="project-nav" id="next">
-        <a href="tek-av.html">Next Project <i>→</i></a>
+        <a href="{{site.baseurl}}/work/{{page.next}}">Next Project <i>→</i></a>
     </div>
     
     <div class="container">
