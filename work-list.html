@@ -1,0 +1,23 @@
+---
+layout: homepage
+---
+
+<ul>
+    {% for work in site.posts %}
+        <li>
+            <figure>
+                <img class="flex-img" src="{{site.baseurl}}/images/portfolio/tek-av.jpg" alt="">
+                <figcaption class="grid">
+                    <aside class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-3-8">
+                        <h2 class="uno">{{work.title}}</h2>
+                        <h3>Branding, Stationery Design, Web Design &amp; Development.</h3>
+                    </aside>
+                    <aside class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-5-8">
+                        <p>Tek-AV is a company that does things. They approached us to help them with their branding and also some other stuff. Here is a look at the things we designed.</p>
+                        <a class="all-caps arrow-bounce" href="{{site.baseurl}}/work/tek-av">Full Project <i>→</i></a>
+                    </aside>
+                </figcaption>
+            </figure>
+        </li>
+    {% endfor %}
+</ul>

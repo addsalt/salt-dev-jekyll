@@ -1,69 +1,28 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-	<meta charset="UTF-8">
-	<meta name="handheldfriendly" content="true">
-	<meta name="mobileoptimized" content="240">
-	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
-	<meta name="description" content="Tek-AV is an Ottawa-based contracting service specializing in the installation of home comfort, entertainment and technology.">
-	<link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
-	<title>Salt. > {% if page.metaTitle %}{{page.metaTitle}}{% endif %}</title>
-    <meta name="description" content="{{page.metaDesc}}"
-</head>
-	
-<body class="internal">
-    
-    <div class="project-nav" id="prev">
-        <a href="{{site.baseurl}}/work/{{page.prev}}"><i>→</i> Prev Project</a>
-    </div>
-    <div class="project-nav" id="next">
-        <a href="{{site.baseurl}}/work/{{page.next}}">Next Project <i>→</i></a>
-    </div>
-    
-    <div class="container">
-        {% include nav.html %}
-        
-        <main class="project-info">
-            
-            <div class="intro-img {{page.mastheadClass}}"></div>
-        
-            {{content}}
-        
-            <section id="about-project" class="push-top">
-                <div class="max-width">
-                    <div id="project-about">
-                        <p>This project was really awesome because…here we can describe the takeaways from the project. We can touch upon our experiences, our client relationship, lessons learnt and anything else that came up along the way.</p>
-                    </div> 
-                    <div class="more-projects">
-                        <h2 class="reg neuzeit underline no-margin-top">More Projects</h2>
-                        {% include projects-nav.html %}
-                    </div>
-                </div>
-            </section> 
-            <footer>
-                <p>© 2015 Salt.</p>
-            </footer>
-        </main>
-    </div>
+---
+layout: default
+bodyClass: internal
+mainClass: project-info
+---
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://use.typekit.net/rgh7tbr.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script>
-        $(function() {
-          $('.smooth-scroll').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 500);
-                return false;
-              }
-            }
-          });
-        });
-    </script>
-</body>
-</html>
+<div class="project-nav" id="prev">
+    <a href="{{site.baseurl}}/work/{{page.prev}}"><i>→</i> Prev Project</a>
+</div>
+<div class="project-nav" id="next">
+    <a href="{{site.baseurl}}/work/{{page.next}}">Next Project <i>→</i></a>
+</div>
+
+<div class="intro-img {{page.mastheadClass}}"></div>
+
+{{content}}
+
+<section id="about-project" class="push-top">
+    <div class="max-width">
+        <div id="project-about">
+            <p>This project was really awesome because…here we can describe the takeaways from the project. We can touch upon our experiences, our client relationship, lessons learnt and anything else that came up along the way.</p>
+        </div> 
+        <div class="more-projects">
+            <h2 class="reg neuzeit underline no-margin-top">More Projects</h2>
+            {% include projects-nav.html %}
+        </div>
+    </div>
+</section> 

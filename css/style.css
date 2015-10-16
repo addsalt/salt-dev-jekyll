@@ -1349,6 +1349,14 @@ body, html {
       align-self: center;
 }
 
+.wf-loading {
+  visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+  visibility: visible;
+}
+
 @-moz-viewport {
   width: device-width;
   scale: 1;

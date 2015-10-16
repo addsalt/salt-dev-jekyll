@@ -1,5 +1,13 @@
 // Main
 
+.wf-loading {
+    visibility: hidden;
+}
+
+.wf-active, .wf-inactive {
+    visibility: visible;
+}
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
