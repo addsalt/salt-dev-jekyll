@@ -1395,7 +1395,7 @@ body {
   width: calc(100% - 36px);
   margin: 18px auto;
   background-color: white;
-  color: #d33f39;
+  color: #464646;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
@@ -1408,7 +1408,7 @@ body {
 }
 
 body a {
-  color: #d33f39;
+  color: #464646;
 }
 
 header, #intro, #work figcaption, .max-width, footer p {
@@ -1432,7 +1432,7 @@ header {
 
 .container {
   background-color: #ddf4f6;
-  background-color: rgba(0, 1, 0, 0.03);
+  background-color: white;
 }
 
 p {
@@ -1761,12 +1761,7 @@ nav .instagram-link a:hover i {
 }
 
 #about {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: #464646;
-}
-
-#about a {
-  color: #464646;
+  background-color: #f2f5f2;
 }
 
 #about .about-bottom {
@@ -1947,8 +1942,7 @@ nav .instagram-link a:hover i {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: #464646;
+  background-color: #f2f5f2;
   text-align: center;
 }
 
