@@ -1590,6 +1590,10 @@ nav ul li a {
   color: #464646;
 }
 
+nav ul li a:hover .icon-arrow:before {
+  -webkit-transform: translateY(-5px) translateX(14px);
+}
+
 nav .instagram-link {
   font-size: .375rem;
   letter-spacing: 0.04em;
@@ -1603,24 +1607,9 @@ nav .instagram-link {
   }
 }
 
-nav .instagram-link a {
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-}
-
 nav .instagram-link a i {
   margin-right: 8px;
   color: #464646;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-}
-
-nav .instagram-link a:hover {
-  color: #d33f39;
-}
-
-nav .instagram-link a:hover i {
-  color: #d33f39;
 }
 
 #intro h1, #intro .dos {
@@ -1657,8 +1646,6 @@ nav .instagram-link a:hover i {
 #intro .vertical-link a i {
   display: inline-block;
   margin-left: 0px;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
 }
 
 #intro .vertical-link a:hover i {
@@ -1810,8 +1797,6 @@ nav .instagram-link a:hover i {
 
 #about #contact ul a {
   margin-left: 0px;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
 }
 
 #about #contact ul a:hover {
@@ -1891,12 +1876,6 @@ nav .instagram-link a:hover i {
 
 #about #team figure figcaption ul li a {
   text-decoration: none;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-}
-
-#about #team figure figcaption ul li a:hover {
-  color: #d33f39;
 }
 
 #about #team figure figcaption ul li:first-child {
@@ -1974,22 +1953,12 @@ footer p {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?91561001");
-  src: url("../font/fontello.eot?91561001#iefix") format("embedded-opentype"), url("../font/fontello.woff?91561001") format("woff"), url("../font/fontello.ttf?91561001") format("truetype"), url("../font/fontello.svg?91561001#fontello") format("svg");
+  src: url("../font/fontello.eot?44918365");
+  src: url("../font/fontello.eot?44918365#iefix") format("embedded-opentype"), url("../font/fontello.woff?44918365") format("woff"), url("../font/fontello.ttf?44918365") format("truetype"), url("../font/fontello.svg?44918365#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?91561001#fontello') format('svg');
-  }
-}
-*/
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -2013,30 +1982,40 @@ footer p {
 }
 
 .icon-instagram:before {
-  content: '\e059';
+  content: '\e132';
 }
 
-/* '' */
-.icon-dribbble:before {
-  content: '\e060';
-}
-
-/* '' */
+/* '' */
 .icon-mail:before {
-  content: '\e061';
+  content: '\e133';
 }
 
-/* '' */
+/* '' */
+.icon-dribbble:before {
+  content: '\e134';
+}
+
+/* '' */
 .icon-linkedin:before {
-  content: '\e062';
+  content: '\e135';
 }
 
-/* '' */
-.icon-mail-1:before {
-  content: '\e063';
+/* '' */
+.icon-arrow:before {
+  content: '\e136';
+  -webkit-transform: translateY(-5px) translateX(6px);
+  -ms-transform: translateY(-5px) translateX(6px);
+  transform: translateY(-5px) translateX(6px);
 }
 
-/* '' */
+/* '' */
+.icon-arrow-contact:before {
+  -webkit-transform: translateY(-5px) translateX(0);
+  -ms-transform: translateY(-5px) translateX(0);
+  transform: translateY(-5px) translateX(0);
+}
+
+/* '' */
 .internal {
   padding: 0;
   color: #464646;

@@ -192,6 +192,11 @@ nav {
                 line-height: 1;
                 font-size: 1rem;
                 color: #464646;
+                &:hover {
+                    .icon-arrow:before {
+                        -webkit-transform: translateY(-5px) translateX(14px);
+                    }
+                }
             }
         }
     }
@@ -204,20 +209,17 @@ nav {
             display: inline-block;
         }
         a {
-            -webkit-transition: all 120ms ease-in;
-            transition: all 120ms ease-in;
+            //-webkit-transition: all 120ms ease-in;
+            //transition: all 120ms ease-in;
             i {
                 margin-right: 8px;
                 color: #464646;
-                -webkit-transition: all 120ms ease-in;
-                transition: all 120ms ease-in;
+                //-webkit-transition: all 120ms ease-in;
+                //transition: all 120ms ease-in;
             }
-            &:hover {
-                color: #d33f39;
-                i {
-                    color: #d33f39;
-                }
-            }
+            //&:hover {
+              //  opacity: .8;
+            //}
         }
         
     }
@@ -247,8 +249,8 @@ nav {
             i {
                 display: inline-block;
                 margin-left: 0px;
-                -webkit-transition: all 120ms ease-in;
-                transition: all 120ms ease-in;
+                //-webkit-transition: all 120ms ease-in;
+                //transition: all 120ms ease-in;
             }
             &:hover i {
                 display: inline-block;
@@ -367,8 +369,8 @@ nav {
             }
             a {
                 margin-left: 0px;
-                -webkit-transition: all 120ms ease-in;
-                transition: all 120ms ease-in;
+                //-webkit-transition: all 120ms ease-in;
+                //transition: all 120ms ease-in;
                 &:hover {
                     margin-left: 10px;
                 }
@@ -429,11 +431,11 @@ nav {
                         overflow: hidden;
                         a {
                             text-decoration: none;
-                            -webkit-transition: all 120ms ease-in;
-                            transition: all 120ms ease-in;
-                            &:hover {
-                                color: #d33f39;
-                            }
+                            //-webkit-transition: all 120ms ease-in;
+                            //transition: all 120ms ease-in;
+                            //&:hover {
+                              //  color: #d33f39;
+                            //}
                         }
                         &:first-child {
                             padding-top:  1px;
