@@ -932,6 +932,24 @@ body, html {width: 100%; padding: 0; margin: 0;}
     padding-left: 13px;
  }
     
+.gutter-1st {
+    padding-right: 14px;
+}
+    
+.gutter-2nd {
+    padding-left: 5px;
+    padding-right: 9px;
+}  
+    
+.gutter-3rd {
+    padding-left: 9px;
+    padding-right: 5px;
+} 
+    
+.gutter-4th {
+    padding-left: 14px;
+}
+    
 .unit-l-hidden {
   display: none;
   visibility: hidden;

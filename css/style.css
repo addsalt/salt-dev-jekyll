@@ -747,6 +747,20 @@ body, html {
   .gutter-left {
     padding-left: 13px;
   }
+  .gutter-1st {
+    padding-right: 14px;
+  }
+  .gutter-2nd {
+    padding-left: 5px;
+    padding-right: 9px;
+  }
+  .gutter-3rd {
+    padding-left: 9px;
+    padding-right: 5px;
+  }
+  .gutter-4th {
+    padding-left: 14px;
+  }
   .unit-l-hidden {
     display: none;
     visibility: hidden;
@@ -1951,6 +1965,11 @@ footer p {
   margin-left: -1px;
 }
 
+.kern-8 {
+  display: inline-block;
+  margin-left: -10px;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../font/fontello.eot?44918365");
@@ -2146,7 +2165,7 @@ footer p {
   font-weight: 400;
   font-size: 4.65rem;
   letter-spacing: -0.04em;
-  margin-top: 2.75rem;
+  margin-top: 3.75rem;
   line-height: .85;
 }
 
@@ -2162,7 +2181,7 @@ footer p {
 }
 
 .project-intro p {
-  margin-bottom: 3.125rem;
+  margin-bottom: 4.125rem;
 }
 
 .work-grid aside {
@@ -2356,4 +2375,36 @@ blockquote cite:after {
 .project-info figure figcaption p {
   font-size: .64rem;
   margin-top: 6px;
+}
+
+.center-holder {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.02);
+  position: relative;
+  height: 20rem;
+}
+
+@media only screen and (min-width: 38em) {
+  .center-holder {
+    height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .center-holder {
+    height: 40rem;
+  }
+}
+
+.center-holder img {
+  display: block;
+  position: absolute;
+  width: 20%;
+  max-width: 150px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%);
 }
