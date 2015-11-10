@@ -1742,11 +1742,12 @@ nav .instagram-link a i {
 @media only screen and (min-width: 60em) {
   #work figcaption {
     padding-top: 11.11%;
-    padding-bottom: -webkit-calc(11.11% - 2.675rem);
-    padding-bottom: calc(11.11% - 2.675rem);
+    padding-bottom: -webkit-calc(11.11% - .675rem);
+    padding-bottom: calc(11.11% - .675rem);
   }
   #work figcaption aside:first-child {
-    margin-top: -5.35rem;
+    margin-top: -1.35rem;
+    margin-top: -5.15rem;
   }
   #work figcaption aside:nth-child(2) {
     margin-top: 0rem;
@@ -1774,14 +1775,14 @@ nav .instagram-link a i {
 }
 
 #about {
-  background-color: #383838;
-  color: #b2b2b2;
+  background-color: #323333;
+  color: #dddfe1;
 }
 
 #about .about-bottom {
   margin-top: 6rem;
   padding-top: 3.25rem;
-  border-top: dotted 1px #b2b2b2;
+  border-top: dotted 1px #dddfe1;
 }
 
 #about #contact h1, #about #contact h2 {
@@ -1810,7 +1811,7 @@ nav .instagram-link a i {
 
 #about #contact ul a {
   margin-left: 0px;
-  color: #b2b2b2;
+  color: #dddfe1;
 }
 
 #about #contact ul a:hover {
@@ -1890,7 +1891,7 @@ nav .instagram-link a i {
 
 #about #team figure figcaption ul li a {
   text-decoration: none;
-  color: #b2b2b2;
+  color: #dddfe1;
 }
 
 #about #team figure figcaption ul li:first-child {
@@ -1941,12 +1942,12 @@ nav .instagram-link a i {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   padding-bottom: 0px;
-  color: #b2b2b2;
+  color: #dddfe1;
 }
 
 footer {
-  background-color: #383838;
-  color: #b2b2b2;
+  background-color: #323333;
+  color: #dddfe1;
   text-align: center;
 }
 
@@ -2352,10 +2353,7 @@ blockquote cite:after {
 }
 
 #about-project .more-projects {
-  margin-top: 6rem;
-  padding-top: 3.25rem;
   text-align: center;
-  border-top: dotted 1px #464646;
 }
 
 #about-project .more-projects h2 {
@@ -2374,6 +2372,8 @@ blockquote cite:after {
   letter-spacing: -0.01em;
   line-height: 1.3;
   margin: 0;
+  text-decoration: none;
+  position: relative;
 }
 
 #about-project .more-projects .project-list a span {
@@ -2382,14 +2382,16 @@ blockquote cite:after {
 
 #about-project .more-projects .project-list a:link {
   color: #464646;
+  text-decoration: underline;
+}
+
+#about-project .more-projects .project-list a:hover, #about-project .more-projects .project-list a:active, #about-project .more-projects .project-list a:focus, #about-project .more-projects .project-list a .current {
+  color: #dddfe1;
 }
 
 #about-project .more-projects .project-list a:visited {
-  color: #b2b2b2;
-}
-
-#about-project .more-projects .project-list a:hover {
-  color: #b2b2b2;
+  color: #dddfe1;
+  text-decoration: none;
 }
 
 .project-info figure {

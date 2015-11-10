@@ -313,9 +313,10 @@ nav {
         }
         @media only screen and (min-width: 60em) {
             padding-top: 11.11%;
-            padding-bottom: calc(11.11% - 2.675rem);
+            padding-bottom: calc(11.11% - .675rem);
             aside:first-child {
-                margin-top: -5.35rem;
+                margin-top: -1.35rem;
+                margin-top: -5.15rem;
             }
             aside:nth-child(2) {
                 margin-top: 0rem;
