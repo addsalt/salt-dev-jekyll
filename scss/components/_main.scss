@@ -163,11 +163,11 @@ nav {
         background-size: contain;
         background-position: left top;
         display: inline-block;
-        width: 4rem;
+        width: 6rem;
+        height: 2.875rem;
         @media only screen and (min-width: 45em) {
             width: 37.5%;
         }
-        height: 1.875rem;
         text-indent: 9999px;
         overflow: hidden;
     }
