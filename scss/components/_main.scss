@@ -147,8 +147,6 @@ em {
 .arrow-bounce, .we-like a {
     i {
         margin-left: 0px;
-        //-webkit-transition: all 120ms ease-in;
-        //transition: all 120ms ease-in;
     }
     &:hover i {
          margin-left: 10px;
@@ -197,12 +195,16 @@ nav {
                 font-size: 1rem;
                 color: $text;
                 .icon-arrow:before { 
+                    display: none;
                     content: '\e136'; 
                     -webkit-transform: translateY(-4px) translateX(6px);
                     -moz-transform: translateY(-4px) translateX(6px);
                     -ms-transform: translateY(-4px) translateX(6px);
                     -o-transform: translateY(-4px) translateX(6px);
                     transform: translateY(-4px) translateX(6px);
+                    @media only screen and (min-width: 45em) {
+                        display: block;
+                    }
                 } /* '' */
                 &:hover {
                     .icon-arrow:before {

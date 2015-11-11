@@ -250,10 +250,17 @@ nav ul li a {
 }
 
 nav ul li a .icon-arrow:before {
+  display: none;
   content: '\e136';
   -webkit-transform: translateY(-4px) translateX(6px);
   -ms-transform: translateY(-4px) translateX(6px);
   transform: translateY(-4px) translateX(6px);
+}
+
+@media only screen and (min-width: 45em) {
+  nav ul li a .icon-arrow:before {
+    display: block;
+  }
 }
 
 nav ul li a:hover .icon-arrow:before {
