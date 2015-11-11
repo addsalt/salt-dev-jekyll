@@ -30,7 +30,7 @@ body {
     letter-spacing: 0.02em;
     width: calc(100% - 10px);
     margin: 5px auto;
-    @media only screen and (min-width: 45em) {
+    @media only screen and (min-width: 38em) {
         width: calc(100% - 36px);
         margin: 18px auto;
     }
@@ -351,7 +351,10 @@ nav {
     background-color: $background-dark;
     color: $footertext;
     .about-bottom {
-        margin-top: 6rem;
+        margin-top: 3.5rem;
+        @media only screen and (min-width: 38em) {
+            margin-top: 6rem;
+        }
         padding-top: 3.25rem;
         border-top: dotted 1px $footertext; 
     }

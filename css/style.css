@@ -66,7 +66,7 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 38em) {
   body {
     width: -webkit-calc(100% - 36px);
     width: calc(100% - 36px);
@@ -425,9 +425,15 @@ nav .instagram-link a i {
 }
 
 #about .about-bottom {
-  margin-top: 6rem;
+  margin-top: 3.5rem;
   padding-top: 3.25rem;
   border-top: dotted 1px #dddfe1;
+}
+
+@media only screen and (min-width: 38em) {
+  #about .about-bottom {
+    margin-top: 6rem;
+  }
 }
 
 #about #contact h1, #about #contact h2 {
@@ -911,11 +917,17 @@ footer p {
 }
 
 .push-top {
-  margin-top: 18px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 38em) {
+  .push-top {
+    margin-top: 18px;
+  }
 }
 
 .push-top-small {
-  margin-top: 18px;
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 38em) {

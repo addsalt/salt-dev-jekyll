@@ -218,11 +218,14 @@
 }
 
 .push-top {
-    margin-top: 18px;
+    margin-top: 5px;
+    @media only screen and (min-width: 38em) {
+        margin-top: 18px;
+    }
 }
 
 .push-top-small {
-    margin-top: 18px;
+    margin-top: 5px;
     @media only screen and (min-width: 38em) {
         margin-top: 0;
     }
