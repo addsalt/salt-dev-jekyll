@@ -49,9 +49,10 @@ body {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.02em;
-  width: -webkit-calc(100% - 36px);
-  width: calc(100% - 36px);
-  margin: 18px auto;
+  width: -webkit-calc(100% - 10px);
+  width: calc(100% - 10px);
+  margin: 5px auto;
+  max-width: 1920px;
   background-color: white;
   color: #464646;
   text-rendering: optimizeLegibility;
@@ -63,6 +64,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+@media only screen and (min-width: 45em) {
+  body {
+    width: -webkit-calc(100% - 36px);
+    width: calc(100% - 36px);
+    margin: 18px auto;
+  }
 }
 
 body a {

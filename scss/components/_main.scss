@@ -28,8 +28,13 @@ body {
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0.02em;
-    width: calc(100% - 36px);
-    margin: 18px auto;
+    width: calc(100% - 10px);
+    margin: 5px auto;
+    @media only screen and (min-width: 45em) {
+        width: calc(100% - 36px);
+        margin: 18px auto;
+    }
+    max-width: 1920px;
     background-color: white;
     color: $text;
     text-rendering: optimizeLegibility;
