@@ -2431,7 +2431,7 @@ blockquote cite:after {
   top: 50%;
   left: 0;
   right: 0;
-  -webkit-transform: translateY(-75%);
-  -ms-transform: translateY(-75%);
-  transform: translateY(-75%);
+  -webkit-transform: translateY(-61%);
+  -ms-transform: translateY(-61%);
+  transform: translateY(-61%);
 }
