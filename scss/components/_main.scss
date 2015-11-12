@@ -184,11 +184,8 @@ nav {
         }
         li {
             display: inline-block;
-            width: 30%;
+            width: 25%;
             @media only screen and (min-width: 35em) {
-                width: 32.05%;
-            }
-            @media only screen and (min-width: 45em) {
                 width: 32.05%;
             }
             @media only screen and (min-width: 65em) {
@@ -200,7 +197,11 @@ nav {
                 transform: translateY(-2px);
             }
             &:last-child {
-                width: auto;
+                width: 10%;
+                margin-left: 17px;
+                @media only screen and (min-width: 35em) {
+                    width: auto;
+                }
             }
             a {
                 text-decoration: none;

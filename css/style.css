@@ -230,16 +230,10 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  width: 30%;
+  width: 25%;
 }
 
 @media only screen and (min-width: 35em) {
-  nav ul li {
-    width: 32.05%;
-  }
-}
-
-@media only screen and (min-width: 45em) {
   nav ul li {
     width: 32.05%;
   }
@@ -255,7 +249,14 @@ nav ul li {
 }
 
 nav ul li:last-child {
-  width: auto;
+  width: 10%;
+  margin-left: 17px;
+}
+
+@media only screen and (min-width: 35em) {
+  nav ul li:last-child {
+    width: auto;
+  }
 }
 
 nav ul li a {
