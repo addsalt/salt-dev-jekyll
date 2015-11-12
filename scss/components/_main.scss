@@ -79,7 +79,10 @@ h1, h2, h3, h4 {
 }
 
 h1, .uno {
-    font-size: 3.046875rem;
+    font-size: 2.25rem;
+    @media only screen and (min-width: 38em) {
+        font-size: 3.046875rem;
+    }
 }
 
 h2, .dos {
@@ -165,6 +168,8 @@ nav {
         height: 2.875rem;
         @media only screen and (min-width: 45em) {
             width: 37.5%;
+            height: 1.875rem;
+            background-position: left top;
         }
         text-indent: 9999px;
         overflow: hidden;
@@ -188,6 +193,11 @@ nav {
             }
             @media only screen and (min-width: 65em) {
                 width: 22.95%;
+                -webkit-transform: translateY(-2px);
+                -moz-transform: translateY(-2px);
+                -ms-transform: translateY(-2px);
+                -o-transform: translateY(-2px);
+                transform: translateY(-2px);
             }
             &:last-child {
                 width: auto;
@@ -206,7 +216,7 @@ nav {
                     -o-transform: translateY(-4px) translateX(6px);
                     transform: translateY(-4px) translateX(6px);
                     @media only screen and (min-width: 45em) {
-                        display: block;
+                        display: inline-block;
                     }
                 } /* '' */
                 &:hover {
@@ -221,9 +231,12 @@ nav {
         font-size: .375rem;
         letter-spacing: 0.04em;
         margin-top: 0.75rem;
-        display: none;
-        @media only screen and (min-width: 65em) {
-            display: inline-block;
+        display: inline-block;
+        .text {    
+            display: none;
+            @media only screen and (min-width: 65em) {
+                display: inline-block;
+            }
         }
         a {
             i {
