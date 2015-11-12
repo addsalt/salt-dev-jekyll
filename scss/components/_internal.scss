@@ -114,11 +114,11 @@
     margin-left: -11px;
     padding-top: 11px;
     transform-origin: left top;
-    -webkit-transform: rotate(270deg) translateX(-103%) translateY(0px);
-    -moz-transform: rotate(270deg) translateX(-103%) translateY(0px);
-    -ms-transform: rotate(270deg) translateX(-103%) translateY(0px);
-    -o-transform: rotate(270deg) translateX(-103%) translateY(0px);
-    transform: rotate(270deg) translateX(-103%) translateY(0px);
+    -webkit-transform: rotate(270deg) translateX(-103%) translateY(1px);
+    -moz-transform: rotate(270deg) translateX(-103%) translateY(1px);
+    -ms-transform: rotate(270deg) translateX(-103%) translateY(1px);
+    -o-transform: rotate(270deg) translateX(-103%) translateY(1px);
+    transform: rotate(270deg) translateX(-103%) translateY(1px);
     @media only screen and (min-width: 38em) {
         -webkit-transform: rotate(270deg) translateX(-103%) translateY(12px);
         -moz-transform: rotate(270deg) translateX(-103%) translateY(12px);
@@ -144,14 +144,15 @@
 
 #next a {
     margin-right: -11px;
-    padding-bottom: 11px;
+    padding-bottom: 0px;
     transform-origin: left top;
-    -webkit-transform: rotate(90deg) translateY(-21px) translateX(6px);
-    -moz-transform: rotate(90deg) translateY(-21px) translateX(6px);
-    -ms-transform: rotate(90deg) translateY(-21px) translateX(6px);
-    -o-transform: rotate(90deg) translateY(-21px) translateX(6px);
-    transform: rotate(90deg) translateY(-21px) translateX(6px);
+    -webkit-transform: rotate(90deg) translateY(-22px) translateX(6px);
+    -moz-transform: rotate(90deg) translateY(-22px) translateX(6px);
+    -ms-transform: rotate(90deg) translateY(-22px) translateX(6px);
+    -o-transform: rotate(90deg) translateY(-22px) translateX(6px);
+    transform: rotate(90deg) translateY(-22px) translateX(6px);
     @media only screen and (min-width: 38em) {
+        padding-bottom: 11px;
         -webkit-transform: rotate(90deg) translateY(-29px) translateX(6px);
         -moz-transform: rotate(90deg) translateY(-29px) translateX(6px);
         -ms-transform: rotate(90deg) translateY(-29px) translateX(6px);

@@ -845,9 +845,9 @@ footer p {
   -webkit-transform-origin: left top;
       -ms-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transform: rotate(270deg) translateX(-103%) translateY(0px);
-  -ms-transform: rotate(270deg) translateX(-103%) translateY(0px);
-  transform: rotate(270deg) translateX(-103%) translateY(0px);
+  -webkit-transform: rotate(270deg) translateX(-103%) translateY(1px);
+  -ms-transform: rotate(270deg) translateX(-103%) translateY(1px);
+  transform: rotate(270deg) translateX(-103%) translateY(1px);
 }
 
 @media only screen and (min-width: 38em) {
@@ -872,17 +872,18 @@ footer p {
 
 #next a {
   margin-right: -11px;
-  padding-bottom: 11px;
+  padding-bottom: 0px;
   -webkit-transform-origin: left top;
       -ms-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transform: rotate(90deg) translateY(-21px) translateX(6px);
-  -ms-transform: rotate(90deg) translateY(-21px) translateX(6px);
-  transform: rotate(90deg) translateY(-21px) translateX(6px);
+  -webkit-transform: rotate(90deg) translateY(-22px) translateX(6px);
+  -ms-transform: rotate(90deg) translateY(-22px) translateX(6px);
+  transform: rotate(90deg) translateY(-22px) translateX(6px);
 }
 
 @media only screen and (min-width: 38em) {
   #next a {
+    padding-bottom: 11px;
     -webkit-transform: rotate(90deg) translateY(-29px) translateX(6px);
     -ms-transform: rotate(90deg) translateY(-29px) translateX(6px);
     transform: rotate(90deg) translateY(-29px) translateX(6px);
