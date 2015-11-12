@@ -941,13 +941,14 @@ footer p {
   font-weight: 400;
   letter-spacing: -0.04em;
   margin-top: 3.75rem;
-  line-height: .85;
+  line-height: 1;
   font-size: 2.25rem;
 }
 
 @media only screen and (min-width: 38em) {
   .project-intro h1 {
     font-size: 4.65rem;
+    line-height: .85;
   }
 }
 
