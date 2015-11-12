@@ -186,7 +186,7 @@ nav {
         }
         li {
             display: inline-block;
-            width: 25%;
+            width: 26%;
             @media only screen and (min-width: 70em) {
                 width: 22.95%;
                 -webkit-transform: translateY(-2px);
@@ -196,7 +196,7 @@ nav {
                 transform: translateY(-2px);
             }
             &:last-child {
-                width: 10%;
+                width: 7%;
                 margin-left: 17px;
                 @media only screen and (min-width: 70em) {
                     width: auto;
