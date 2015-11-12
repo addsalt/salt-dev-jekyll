@@ -640,17 +640,14 @@ footer p {
 }
 
 .kern-2 {
-  display: inline-block;
   margin-left: -3px;
 }
 
 .kern-1 {
-  display: inline-block;
   margin-left: -1px;
 }
 
 .kern-8 {
-  display: inline-block;
   margin-left: -10px;
 }
 
