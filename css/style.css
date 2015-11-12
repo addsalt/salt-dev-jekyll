@@ -80,7 +80,7 @@ body a {
   color: #464646;
 }
 
-header, #intro, #work figcaption, .max-width, footer p {
+header, #intro, #work figcaption, .max-width {
   padding-top: 8.333333333%;
   padding-bottom: 8.333333333%;
   width: 83.33333334%;
@@ -235,13 +235,7 @@ nav ul li {
   width: 25%;
 }
 
-@media only screen and (min-width: 35em) {
-  nav ul li {
-    width: 32.05%;
-  }
-}
-
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 70em) {
   nav ul li {
     width: 22.95%;
     -webkit-transform: translateY(-2px);
@@ -255,7 +249,7 @@ nav ul li:last-child {
   margin-left: 17px;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 70em) {
   nav ul li:last-child {
     width: auto;
   }
@@ -298,7 +292,7 @@ nav .instagram-link .text {
   display: none;
 }
 
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 70em) {
   nav .instagram-link .text {
     display: inline-block;
   }
@@ -332,7 +326,10 @@ nav .instagram-link a i {
 #first-project .vertical-link {
   line-height: 1;
   text-decoration: none;
-  display: none;
+  display: block;
+  position: relative;
+  margin-left: 8.33333%;
+  margin-bottom: 12.333333%;
 }
 
 #first-project .vertical-link a {
@@ -354,18 +351,20 @@ nav .instagram-link a i {
 }
 
 #first-project .vertical-link a:first-child {
-  padding-right: 6px;
+  padding-right: 12px;
 }
 
-#first-project .vertical-link .white {
-  padding-left: 9px;
-  color: white;
-  border-bottom-color: white;
+@media only screen and (min-width: 60em) {
+  #first-project .vertical-link a:first-child {
+    padding-right: 6px;
+  }
 }
 
 @media only screen and (min-width: 60em) {
   #first-project .vertical-link {
     position: absolute;
+    margin-left: 0;
+    margin-bottom: 0;
     top: -5.575rem;
     left: 8.33333%;
     display: inline-block;
@@ -376,6 +375,11 @@ nav .instagram-link a i {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
         transform: rotate(90deg);
+  }
+  #first-project .vertical-link .white {
+    padding-left: 9px;
+    color: white;
+    border-bottom-color: white;
   }
 }
 
@@ -633,12 +637,18 @@ footer {
   text-align: center;
 }
 
-footer p {
-  font-size: .625rem;
-  text-transform: uppercase;
-  border-top: dotted 1px #fff;
+footer .footer-container {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+  width: 83.33333%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-top: dotted 1px #fff;
+}
+
+footer .footer-container .copyright {
+  font-size: .625rem;
+  margin: 0;
 }
 
 .kern-2 {
@@ -728,35 +738,29 @@ footer p {
   color: #464646;
 }
 
-.internal footer p {
-  border-top: dotted 1px #464646;
+.internal footer .footer-container {
+  border-top-color: #464646;
 }
 
-.internal footer .footer-left a {
-  display: inline-block;
-  margin-left: 4px;
-  margin-top: 0px;
+.internal footer .footer-container h2, .internal footer .footer-container h3 {
+  text-transform: none;
 }
 
-.internal footer .footer-right {
-  display: none;
+.internal footer .footer-container .push {
+  margin-top: 1px;
 }
 
-@media only screen and (min-width: 38em) {
-  .internal footer .footer-left {
-    text-align: left;
-    padding-left: 1.5rem;
-  }
-  .internal footer .footer-left a {
-    display: inline-block;
-    margin-left: 4px;
-    margin-top: 0px;
-  }
-  .internal footer .footer-right {
-    display: block;
-    text-align: right;
-    padding-right: 1.5rem;
-  }
+.internal footer .footer-container ul {
+  list-style-type: none;
+  margin: 1.525rem 0 1.75rem;
+}
+
+.internal footer .footer-container ul li a {
+  text-transform: lowercase;
+}
+
+.internal footer .footer-container ul li:nth-child(2) {
+  margin-top: 4px;
 }
 
 .internal .container {

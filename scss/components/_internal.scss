@@ -6,33 +6,25 @@
     footer {
         background-color: $light-grey;
         color: $text;
-        p {
-            border-top: dotted 1px $text;
-        }
-        .footer-left {
-            a {
-                display: inline-block;
-                margin-left: 4px;
-                margin-top: 0px;
+        .footer-container {
+            border-top-color: $text;
+            h2, h3 {
+                text-transform: none;
             }
-        }
-        .footer-right {
-            display: none;
-        }
-        @media only screen and (min-width: 38em) {
-            .footer-left {
-                text-align: left;
-                padding-left: 1.5rem;
-                a {
-                    display: inline-block;
-                    margin-left: 4px;
-                    margin-top: 0px;
+            .push {
+                margin-top: 1px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 1.525rem 0 1.75rem;
+                li {
+                    a {
+                        text-transform: lowercase;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 4px;
+                    }
                 }
-            }
-            .footer-right {
-                display: block;
-                text-align: right;
-                padding-right: 1.5rem;
             }
         }
     }

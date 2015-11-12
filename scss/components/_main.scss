@@ -54,7 +54,7 @@ body a {
     color: $text;
 }
 
-header, #intro, #work figcaption, .max-width, footer p {
+header, #intro, #work figcaption, .max-width {
     padding-top: 8.333333333%;
     padding-bottom: 8.333333333%;
     width: 83.33333334%;
@@ -187,10 +187,7 @@ nav {
         li {
             display: inline-block;
             width: 25%;
-            @media only screen and (min-width: 35em) {
-                width: 32.05%;
-            }
-            @media only screen and (min-width: 65em) {
+            @media only screen and (min-width: 70em) {
                 width: 22.95%;
                 -webkit-transform: translateY(-2px);
                 -moz-transform: translateY(-2px);
@@ -201,7 +198,7 @@ nav {
             &:last-child {
                 width: 10%;
                 margin-left: 17px;
-                @media only screen and (min-width: 35em) {
+                @media only screen and (min-width: 70em) {
                     width: auto;
                 }
             }
@@ -237,7 +234,7 @@ nav {
         display: inline-block;
         .text {    
             display: none;
-            @media only screen and (min-width: 65em) {
+            @media only screen and (min-width: 70em) {
                 display: inline-block;
             }
         }
@@ -268,7 +265,10 @@ nav {
     .vertical-link {
         line-height: 1;
         text-decoration: none;
-        display: none;
+        display: block;
+        position: relative;
+        margin-left: 8.33333%;
+        margin-bottom: 12.333333%;
         a {
             text-decoration: none;
             display: inline-block;
@@ -284,16 +284,21 @@ nav {
                 margin-left: 10px;
             }
             &:first-child {
-                padding-right: 6px;
+                padding-right: 12px;
+                @media only screen and (min-width: 60em) {
+                    padding-right: 6px;
+                }
             }
         }
-        .white {
-            padding-left: 9px;
-            color: white;
-            border-bottom-color: white;
-        }
         @media only screen and (min-width: 60em) {
+            .white {
+                padding-left: 9px;
+                color: white;
+                border-bottom-color: white;
+            }
             position: absolute;
+            margin-left: 0;
+            margin-bottom: 0;
             top: -5.575rem;
             left: 8.33333%;
             display: inline-block;
@@ -515,12 +520,17 @@ footer {
     background-color: $background-dark;
     color: $footertext;
     text-align: center;
-    p {
-        font-size: .625rem;
-        text-transform: uppercase;
-        border-top: dotted 1px $white;
+    .footer-container {
         padding-top: 1.75rem;
         padding-bottom: 1.75rem;
+        width: 83.33333%;
+        margin: 0 auto;
+        text-transform: uppercase;
+        border-top: dotted 1px $white;
+        .copyright {
+            font-size: .625rem;
+            margin: 0;
+        }
     }
 }
 
