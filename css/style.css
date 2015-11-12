@@ -884,10 +884,16 @@ footer p {
 }
 
 .project-intro {
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
   max-width: 2360px;
   text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+  .project-intro {
+    width: 75%;
+  }
 }
 
 .project-intro h1 {
