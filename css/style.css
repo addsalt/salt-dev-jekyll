@@ -642,15 +642,15 @@ footer p {
 }
 
 .kern-2 {
-  margin-left: -3px;
+  margin-left: -.083333333em;
 }
 
 .kern-1 {
-  margin-left: -1px;
+  margin-left: -.027777778em;
 }
 
 .kern-8 {
-  margin-left: -10px;
+  margin-left: -.138888889em;
 }
 
 @font-face {
