@@ -768,12 +768,18 @@ footer p {
   text-align: center;
   height: 9.1rem;
   margin: 0;
-  width: 43px;
+  width: 20px;
   display: block;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 38em) {
+  .project-nav {
+    width: 43px;
+  }
 }
 
 .project-nav a {
@@ -813,10 +819,16 @@ footer p {
 #next a, #prev a {
   display: block;
   width: 9.1rem;
-  height: 43px;
+  height: 21px;
   float: left;
   z-index: 11;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 38em) {
+  #next a, #prev a {
+    height: 43px;
+  }
 }
 
 #next a i, #prev a i {
@@ -833,9 +845,17 @@ footer p {
   -webkit-transform-origin: left top;
       -ms-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transform: rotate(270deg) translateX(-103%) translateY(12px);
-  -ms-transform: rotate(270deg) translateX(-103%) translateY(12px);
-  transform: rotate(270deg) translateX(-103%) translateY(12px);
+  -webkit-transform: rotate(270deg) translateX(-103%) translateY(0px);
+  -ms-transform: rotate(270deg) translateX(-103%) translateY(0px);
+  transform: rotate(270deg) translateX(-103%) translateY(0px);
+}
+
+@media only screen and (min-width: 38em) {
+  #prev a {
+    -webkit-transform: rotate(270deg) translateX(-103%) translateY(12px);
+    -ms-transform: rotate(270deg) translateX(-103%) translateY(12px);
+    transform: rotate(270deg) translateX(-103%) translateY(12px);
+  }
 }
 
 #prev a i {
@@ -856,9 +876,17 @@ footer p {
   -webkit-transform-origin: left top;
       -ms-transform-origin: left top;
           transform-origin: left top;
-  -webkit-transform: rotate(90deg) translateY(-29px) translateX(6px);
-  -ms-transform: rotate(90deg) translateY(-29px) translateX(6px);
-  transform: rotate(90deg) translateY(-29px) translateX(6px);
+  -webkit-transform: rotate(90deg) translateY(-21px) translateX(6px);
+  -ms-transform: rotate(90deg) translateY(-21px) translateX(6px);
+  transform: rotate(90deg) translateY(-21px) translateX(6px);
+}
+
+@media only screen and (min-width: 38em) {
+  #next a {
+    -webkit-transform: rotate(90deg) translateY(-29px) translateX(6px);
+    -ms-transform: rotate(90deg) translateY(-29px) translateX(6px);
+    transform: rotate(90deg) translateY(-29px) translateX(6px);
+  }
 }
 
 #next a i {
@@ -874,11 +902,23 @@ footer p {
 }
 
 #prev:hover {
-  left: 9px;
+  left: 5px;
+}
+
+@media only screen and (min-width: 38em) {
+  #prev:hover {
+    left: 9px;
+  }
 }
 
 #next:hover {
-  right: 9px;
+  right: 5px;
+}
+
+@media only screen and (min-width: 38em) {
+  #next:hover {
+    right: 9px;
+  }
 }
 
 .project-intro {
